@@ -10,7 +10,7 @@ This project demonstrates hands-on work with Python, AI-assisted workflows, LLM 
 
 ### 🚀 Explore the Project
 
-- **Live Application:** [Open Sepsis Monitor AI](YOUR_STREAMLIT_APP_URL)
+-**Live Application:** [Open Sepsis Monitor AI](https://neonatal-sepsis-monitor-ai-mlops.streamlit.app/)
 - **GitHub Repository:** [Explore my projects](https://github.com/Codedchic25/neonatal-sepsis-monitor-ai-mlops)
 - **LinkedIn Profile:** [Maria Gabriela Cojocaru](https://www.linkedin.com/in/maria-gabriela-cojocaru/)
 
