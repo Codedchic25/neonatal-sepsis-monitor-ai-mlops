@@ -1,0 +1,38 @@
+# ============================================================
+# Sepsis Monitor AI - MLOps Security AI Evaluation Pipeline
+# ============================================================
+
+name: Sepsis Monitor AI MLOps Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+
+jobs:
+  ai-security-evaluation:
+    name: Promptfoo AI Guardrail & Injection Test Matrix
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js Runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Promptfoo CLI Globally
+        run: npm install -g promptfoo
+
+      - name: Execute Promptfoo AI Guardrails Evaluation Matrix
+        run: promptfoo eval -c promptfoo.yaml --no-cache
